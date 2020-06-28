@@ -15,7 +15,7 @@ enableScreens();
 const App = () => (
   <Provider rootStore={rootStore}>
     <ApplicationProvider mapping={mapping} theme={lightTheme}>
-      <StatusBar backgroundColor="#30BCC9" barStyle="light-content" />
+      <StatusBar backgroundColor="#1abc9c" barStyle="light-content" />
       <IconRegistry icons={EvaIconsPack} />
       <MainNavigator />
     </ApplicationProvider>

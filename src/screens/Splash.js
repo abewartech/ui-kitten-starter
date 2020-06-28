@@ -12,6 +12,12 @@ class Splash extends Component {
     };
   };
 
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.props.navigation.navigate('Home');
+    }, 3000);
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -21,8 +27,8 @@ class Splash extends Component {
           type="ChasingDots"
           color="#FAF3E3"
         />
-        <Text category="h3" appearance="alternative" style={styles.LoadingText}>
-          UI KITTEN
+        <Text category="h4" appearance="alternative" style={styles.LoadingText}>
+          Searching Hospital Depok
         </Text>
       </View>
     );
@@ -34,7 +40,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#30BCC9',
+    backgroundColor: '#1abc9c',
   },
   LoadingText: {
     color: '#FAF3E3',
