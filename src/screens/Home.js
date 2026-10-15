@@ -33,7 +33,8 @@ class Home extends Component {
       <KeyboardAvoidingView style={styles.container}>
         <ImageBackground
           source={require('../../assets/logo.jpg')}
-          style={{width: 360, height: 290}}></ImageBackground>
+          style={{width: 360, height: 290}}
+        />
         <View style={styles.headerContainer}>
           <Input
             style={styles.input}
@@ -55,7 +56,8 @@ class Home extends Component {
               <TouchableOpacity
                 style={styles.closeButton}
                 activeOpacity={0.9}
-                onPress={this.onRemoveProduct}></TouchableOpacity>
+                onPress={this.onRemoveProduct}
+              />
               <Text
                 style={[styles.nameLabel, styles.labelMargin]}
                 category="s1">
@@ -75,7 +77,7 @@ class Home extends Component {
               </TouchableOpacity>
             </View>
           </View>
-          <View></View>
+          <View />
         </View>
       </KeyboardAvoidingView>
     );
@@ -102,4 +104,3 @@ const styles = StyleSheet.create({
 });
 
 export default Home;
-

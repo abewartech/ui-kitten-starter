@@ -33,7 +33,8 @@ class DaftarRS extends Component {
       <KeyboardAvoidingView style={styles.container}>
         <ImageBackground
           source={require('../../assets/logo.jpg')}
-          style={{width: 360, height: 290}}></ImageBackground>
+          style={{width: 360, height: 290}}
+        />
         <View>
           <View style={{flexDirection: 'row', marginHorizontal: 10}}>
             <ImageBackground
@@ -44,7 +45,8 @@ class DaftarRS extends Component {
               <TouchableOpacity
                 style={styles.closeButton}
                 activeOpacity={0.9}
-                onPress={this.onRemoveProduct}></TouchableOpacity>
+                onPress={this.onRemoveProduct}
+              />
               <Text
                 style={[styles.nameLabel, styles.labelMargin]}
                 category="s1">
@@ -61,7 +63,7 @@ class DaftarRS extends Component {
               </View>
             </View>
           </View>
-          <View></View>
+          <View />
         </View>
       </KeyboardAvoidingView>
     );
