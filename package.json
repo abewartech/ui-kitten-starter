@@ -35,6 +35,13 @@
     "react-test-renderer": "16.12.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native(-.*)?|react-navigation|rsvp|@react-native|@react-native-community|@react-navigation|@ui-kitten|@eva-design)/)"
+    ],
+    "setupFiles": [
+      "./node_modules/react-native/jest/setup.js",
+      "./jest.setup.js"
+    ]
   }
 }
