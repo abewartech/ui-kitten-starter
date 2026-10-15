@@ -35,6 +35,9 @@
     "react-test-renderer": "16.12.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|@react-native-community|@react-native|@ui-kitten|@eva-design)/)"
+    ]
   }
 }
