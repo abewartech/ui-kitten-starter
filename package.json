@@ -37,7 +37,11 @@
   "jest": {
     "preset": "react-native",
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-native-spinkit|react-native-gesture-handler|react-native-ui-kitten|react-navigation|rsvp|@react-native|@react-native-community|@ui-kitten|@eva-design)/)"
+      "node_modules/(?!(react-native(-.*)?|react-navigation|rsvp|@react-native|@react-native-community|@react-navigation|@ui-kitten|@eva-design)/)"
+    ],
+    "setupFiles": [
+      "./node_modules/react-native/jest/setup.js",
+      "./jest.setup.js"
     ]
   }
 }
