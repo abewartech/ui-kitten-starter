@@ -43,5 +43,11 @@
       "./node_modules/react-native/jest/setup.js",
       "./jest.setup.js"
     ]
+  },
+  "overrides": {
+    "form-data": "2.5.4",
+    "json-schema": "0.4.0",
+    "shell-quote": "1.11.0",
+    "logkitty": "0.7.1"
   }
 }
